@@ -1,6 +1,27 @@
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened class="sidenav">Sidenav content</mat-sidenav>
+  <mat-sidenav mode="side" opened class="sidenav">
+    <mat-nav-list>
+      <h2 matSubheader>DRIP-FEED PROCESSES</h2>
+      <a *ngFor="let item of dripFeedProcesses" mat-list-item
+        class="list-item"
+        [routerLink]="[item.route]">
+        <!-- <mat-icon matListIcon class="app-nav-list-icon"> {{ item.icon }} </mat- icon> -->
+        {{item.title}}
+      </a>
+
+      <mat-divider></mat-divider>
+
+      <h2 matSubheader> BACK-END SETTINGS </h2>
+      <a *ngFor="let item of backendSettings" mat-list-item
+        class="list-item"
+        [routerLink]="[item.route]">
+        <!-- <mat-icon matListIcon class="app-nav-list-icon"> {{ item.icon }} </mat- icon> -->
+        {{item.title}}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
   <mat-sidenav-content>
-    Main content
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

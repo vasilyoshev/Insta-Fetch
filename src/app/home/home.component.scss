@@ -1,0 +1,32 @@
+.mat-sidenav-container {
+    height: 100%;
+}
+  
+$sidenav-width: 320px; // 240px;
+
+.mat-sidenav {
+    width: $sidenav-width;
+    background: #222c3c;
+}
+
+.toolbar-title {
+    margin: 0 16px 0 16px;
+}
+
+.mat-subheader {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-nav-list-icon {
+    margin: 0 12px 0 12px;
+}
+
+h2 {
+    color: #5b6779;
+}
+
+.list-item {
+    color: #b7c0cd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
